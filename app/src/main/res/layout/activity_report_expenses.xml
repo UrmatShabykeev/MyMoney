@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mymoney.report_expenses">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView_Name_of_Window"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:text="Отчет по расходам" />
+
+        <Spinner
+            android:id="@+id/spinner_for_reportDate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView_for_choosing_date"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@android:color/background_light"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="datePicking"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button_for_showing_report_of_expenses"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="Показать" />
+
+        <TextView
+            android:id="@+id/textView_for_showing_report"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:background="@android:color/background_light"
+            android:textColor="#000000"
+            android:scrollbars="vertical"
+            android:text="" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mymoney.Report_window"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView_Name_of_Window"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.02"
+            android:textSize="30sp"
+            android:text="\t\t\t\t\t\t\t\tОтчет по доходам"
+            android:textColor="#000000"/>
+
+        <Spinner
+            android:id="@+id/spinner_for_reportDate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:id="@+id/textView_for_choosing_date"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.02"
+            android:textSize="15sp"
+            android:background="@android:color/background_light"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:onClick="datePicking"/>
+
+        <Button
+            android:id="@+id/button_for_showing_report_of_incomes"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.02"
+            android:text="Показать"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/textView_for_showing_report"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:background="@android:color/background_light"
+            android:textColor="#000000"
+            android:scrollbars="vertical"
+            android:text="" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

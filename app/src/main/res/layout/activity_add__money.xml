@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mymoney.Add_Money">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/textView_for_input_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Введите доход:"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignBottom="@+id/editText_for_input_income"
+            android:layout_toLeftOf="@+id/editText_for_input_income"
+            android:layout_toStartOf="@+id/editText_for_input_income" />
+
+        <EditText
+            android:id="@+id/editText_for_input_income"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:background="@android:color/background_light" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            android:layout_below="@+id/editText_for_input_income"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="33dp"
+            android:layout_alignLeft="@+id/editText_for_input_income"
+            android:layout_alignStart="@+id/editText_for_input_income"
+            android:id="@+id/spinner_for_incomeCategory" />
+
+        <TextView
+            android:id="@+id/textView_for_category_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Категория"
+            android:layout_alignBottom="@+id/spinner_for_incomeCategory"
+            android:layout_alignRight="@+id/textView_for_input_income"
+            android:layout_alignEnd="@+id/textView_for_input_income"
+            android:layout_alignTop="@+id/spinner_for_incomeCategory" />
+
+        <TextView
+            android:id="@+id/textView_for_income_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Описание:"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textView_for_category_choice"
+            android:layout_toLeftOf="@+id/textView_for_category_choice"
+            android:layout_toStartOf="@+id/textView_for_category_choice" />
+
+        <EditText
+            android:id="@+id/editText_for_input_description"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:layout_below="@+id/textView_for_income_description"
+            android:hint="Описание"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView_for_date_of_add_income"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="38dp"
+            android:background="@android:color/background_light"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="Выберите дату: "
+            android:clickable="true"
+            android:onClick="datePicking"
+
+            android:layout_below="@+id/editText_for_input_description"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button_for_saving_add_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_for_date_of_add_income"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/save_img"
+            android:text="Сохранить" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

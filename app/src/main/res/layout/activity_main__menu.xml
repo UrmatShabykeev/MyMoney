@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.user.mymoney.Main_Menu">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/add_income_button"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_red_light"
+            android:drawableLeft="@drawable/add_money_img"
+            android:text="Добавить доходы"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:onClick="AddMoney_Touched"/>
+
+        <Button
+            android:id="@+id/add_expense_button"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_blue_bright"
+            android:drawableLeft="@drawable/remove_money_img"
+            android:text="Добавить расходы"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:onClick="AddExpense_Touched"/>
+
+        <Button
+            android:id="@+id/get_report_income_button"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_orange_light"
+            android:drawableLeft="@drawable/report_money"
+            android:onClick="Report_Touched"
+            android:text="Отчет по доходам"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/get_report_expense_buttonbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_purple"
+            android:drawableLeft="@drawable/report_money"
+            android:onClick="Report_Touched_Expenses"
+            android:text="Отчет по расходам"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/darker_gray"
+            android:drawableLeft="@drawable/exit_button_img"
+            android:onClick="ExitButtonPressed"
+            android:text="Выход"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
